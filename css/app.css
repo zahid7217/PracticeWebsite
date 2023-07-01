@@ -1,0 +1,251 @@
+body {
+    font-family: 'Encode Sans', sans-serif;
+    word-spacing: 1rem;
+    letter-spacing: 0.2rem;
+    background-color: rgba(125, 255, 255, 0.735);
+}
+
+.head {
+    padding-top: 5rem;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    background-image: url("/Angela\'s\ Project/capstone\ project\-2/images/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: aliceblue;
+}
+
+.head>h2 {
+    font-size: 2rem;
+    margin: 1.5rem auto 2rem;
+}
+
+h1 {
+    font-size: 5rem;
+    margin: auto;
+    font-family: 'Libre Baskerville', serif;
+}
+
+.head>img {
+    width: 20rem;
+    height: 20rem;
+    border-radius: 10rem;
+    margin: 2rem auto 5rem auto;
+}
+
+.body {
+    margin: auto 5rem auto 5rem;
+    padding: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+.container {
+    margin: 5rem auto 5rem auto;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 3fr;
+}
+
+p {
+    margin: 0px auto auto auto;
+    grid-column-start: 2;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 2rem;
+    margin: 0px auto 0px 0px;
+}
+
+hr {
+    background-color: gray;
+    width: 100%;
+}
+
+#image {
+    margin-right: 3rem;
+    width: 20rem;
+    height: 20rem;
+    grid-row: span 2;
+}
+
+.footer {
+    height: fit-content;
+    color: antiquewhite;
+    background-color: rgba(0, 0, 0, 0.849);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1.5fr;
+    text-align: center;
+}
+
+.contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3rem;
+}
+
+.copyright>p {
+    padding-top: 4rem;
+}
+
+#logo {
+    width: 3rem;
+    height: 3rem;
+    margin-right: 1rem;
+    border-radius: 1.5rem;
+}
+
+a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: antiquewhite;
+}
+
+@media(max-width: 1600px) and (min-width:1000px) {
+    .body {
+        padding: 3rem;
+        margin: 1rem;
+    }
+
+    .container {
+        margin: 1rem;
+
+    }
+
+    p {
+        margin: 1rem 1rem auto auto;
+        grid-column-start: 2;
+    }
+
+}
+
+@media(max-width: 1000px) and (min-width:769px) {
+    .container {
+        margin: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: baseline;
+        text-align: left;
+    }
+
+    p {
+        margin-top: 2rem;
+    }
+
+    h3 {
+        margin-top: 2rem;
+    }
+
+    .body {
+        padding: 1rem;
+        margin: 1rem;
+    }
+
+    #image {
+        width: 25rem;
+        height: 25rem;
+    }
+
+    .contact {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    a {
+        margin-right: 1.5rem;
+    }
+
+    .copyright>p {
+        margin-top: 2rem;
+    }
+
+}
+
+@media(max-width:768px) {
+    .container {
+        margin: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: baseline;
+        text-align: left;
+    }
+
+    p {
+        margin-top: 2rem;
+    }
+
+    h3 {
+        margin-top: 2rem;
+    }
+
+    .body {
+        padding: 1rem;
+        margin: 1rem;
+    }
+
+    #image {
+        width: 20rem;
+        height: 20rem;
+    }
+
+    .contact {
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        align-items: center;
+
+    }
+
+    a {
+        margin: auto auto 1rem 0rem;
+    }
+
+    .copyright {
+        height: fit-content;
+    }
+
+    .footer {
+        height: 30rem;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    .head {
+        text-align: center;
+    }
+
+    .copyright>p {
+        padding: 1rem;
+    }
+}
+
+@media(max-width: 414px) {
+    .head {
+        width: 414px;
+    }
+
+    .container {
+        width: 360px;
+    }
+
+    .footer {
+        width: fit-content;
+    }
+}
